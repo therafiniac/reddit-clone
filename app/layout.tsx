@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`dark ${inter.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-background bg-foreground">
+      <body className="min-h-full flex flex-col ">
         <NeonAuthProviders> {children}</NeonAuthProviders>
       </body>
     </html>
