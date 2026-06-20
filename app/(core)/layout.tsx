@@ -7,12 +7,12 @@ export default async function CoreGroupLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const user = await  getSessionUser()
+  const user = await getSessionUser();
   return (
     <>
       <Navbar />
       <div>
-        <LeftSidebar />
+        <LeftSidebar showCta={!user}  />
         <div>{children}</div>
       </div>
     </>
