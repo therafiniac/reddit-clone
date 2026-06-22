@@ -2,7 +2,6 @@ import { LeftSidebar } from '@/components/layout/LeftSidebar';
 import { Navbar } from '@/components/layout/Navbar';
 import { getSessionUser } from '@/lib/auth';
 import { tagPostCounts } from '@/lib/db/queries';
-import { Tags } from 'lucide-react';
 
 export default async function CoreGroupLayout({
   children,

@@ -1,4 +1,4 @@
-// import { EnrichedCommentNode, nestCommentRows } from '../comment-tree';
+import { EnrichedCommentNode, nestCommentRows } from '../commentTree';
 import { PostModel } from '../generated/prisma/models';
 import { prisma } from '../prisma';
 import { Comment, FeedSort, Post, Tag, User, VoteTarget } from '../types';
