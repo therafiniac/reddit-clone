@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Flame, Home, LayoutGrid } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
+
 import { Tag } from '@/lib/types';
 import { LeftTags } from './LeftTags';
 import { JoinCtaCard } from './JoinCtaCard';
@@ -70,7 +71,7 @@ export function LeftSidebar({
         <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           Top Tags
         </p>
-        <LeftTags  />
+        <LeftTags items={tagsWithCounts} />
       </div>
       {showCta && (
         <div className="mt-8">
