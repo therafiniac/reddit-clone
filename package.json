@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:push": "prisma db push && prisma generate",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:seed-cv": "tsx scripts/seed-with-comments-and-votes.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -16,6 +19,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "clx": "^1.0.0",
+    "dotenv": "^17.4.2",
     "lucide-react": "^1.21.0",
     "next": "16.2.9",
     "react": "19.2.4",
