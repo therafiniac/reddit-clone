@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { UserAvatar } from '@neondatabase/auth/react';
 import { MessageSquare, Share2 } from 'lucide-react';
 import Link from 'next/link';
+import { VoteButtons } from './Votebutton';
 // import { VoteButtons } from './vote-buttons';
 
 function snippet(body: string, max = 160) {
