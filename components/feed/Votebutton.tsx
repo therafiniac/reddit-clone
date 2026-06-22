@@ -1,6 +1,6 @@
 'use client';
 
-// import { voteCommentAction } from '@/lib/actions/comments';
+import { voteCommentAction } from '@/lib/actions/comments';
 import { votePostAction } from '@/lib/actions/posts';
 import { cn } from '@/lib/utils';
 import { ChevronDown, ChevronUp } from 'lucide-react';
