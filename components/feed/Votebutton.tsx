@@ -1,7 +1,7 @@
 'use client';
 
 // import { voteCommentAction } from '@/lib/actions/comments';
-// import { votePostAction } from '@/lib/actions/posts';
+import { votePostAction } from '@/lib/actions/posts';
 import { cn } from '@/lib/utils';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useRouter } from 'next/navigation';
@@ -24,16 +24,16 @@ export function VoteButtons({
   const router = useRouter();
   const isPost = target === 'post';
 
-  // function vote(value: -1 | 1) {
-  //   startTransition(async () => {
-  //     if (isPost) {
-  //       await votePostAction(targetId, value);
-  //     } else {
-  //       await voteCommentAction(targetId, value);
-  //     }
-  //     router.refresh();
-  //   });
-  // }
+  function vote(value: -1 | 1) {
+    startTransition(async () => {
+      if (isPost) {
+        await votePostAction(targetId, value);
+      } else {
+        await voteCommentAction(targetId, value);
+      }
+      router.refresh();
+    });
+  }
 
   const iconClass = isPost ? 'size-6' : 'size-4';
   const stackClass = isPost
