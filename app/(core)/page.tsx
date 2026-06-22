@@ -1,4 +1,4 @@
-// import { FeedSortTabs } from '@/components/feed/feed-sort-tabs';
+import { FeedSortTabs } from '@/components/feed/FeedSortTabs';
 import { PostCard } from '@/components/feed/PostCard';
 // import { RightTrending } from '@/components/layout/right-trending';
 import { auth, getSessionUser } from '@/lib/auth';
@@ -65,7 +65,7 @@ export default async function Home({
         </div>
       </div>
       <aside className="hidden w-72 shrink-0 space-y-6 lg:block">
-        <RightTrending items={trending} />
+        {/* <RightTrending items={trending} /> */}
         {/* <RightTopTags /> */}
       </aside>
     </div>
